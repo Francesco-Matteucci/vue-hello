@@ -1,0 +1,17 @@
+#app {
+    min-height: calc(100vh - 56px);
+    background-color: #007bff;
+}
+
+#app h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#app img {
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#app img:hover {
+    transform: scale(1.1);
+}

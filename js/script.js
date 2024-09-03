@@ -12,6 +12,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            //inserisco il message e l'imageUrl
             message: 'Benvenuto, finalmente, in VUE!',
             imageUrl: 'img/vue.png',
         }
