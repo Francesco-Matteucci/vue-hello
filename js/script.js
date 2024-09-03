@@ -12,9 +12,23 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            //inserisco il message e l'imageUrl
+
+            // Contenuti della navbar
+            brandName: 'Fra Emme',
+            navItems: [
+                { name: 'Home', href: '#' },
+                { name: 'Boolean', href: 'https://boolean.careers/' },
+                { name: 'Contatti', href: '#' }
+            ],
+
+            // Contenuti del main section
             message: 'Benvenuto, finalmente, in VUE!',
             imageUrl: 'img/vue.png',
-        }
+
+            // Contenuti del footer
+            footerText: '© 2024',
+            footerName: 'Francesco Matteucci',
+            footerLink: 'https://github.com/Francesco-Matteucci',
+        };
     }
-}).mount('#app')
+}).mount('#app');
