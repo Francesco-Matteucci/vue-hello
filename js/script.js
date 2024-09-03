@@ -12,7 +12,8 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            message: 'Benvenuto, finalmente, in VUE!'
+            message: 'Benvenuto, finalmente, in VUE!',
+            imageUrl: 'img/vue.png',
         }
     }
 }).mount('#app')
