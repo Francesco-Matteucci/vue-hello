@@ -18,41 +18,45 @@
 
 <body>
     <div id="app">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">{{ brandName }}</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li v-for="item in navItems" :key="item.name" class="nav-item">
-                            <a class="nav-link" :href="item.href">{{ item.name }}</a>
-                        </li>
-                    </ul>
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">{{ brandName }}</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li v-for="item in navItems" :key="item.name" class="nav-item">
+                                <a class="nav-link" :href="item.href">{{ item.name }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Main Section -->
+            <div
+                class=" main-section container-fluid text-center text-light d-flex justify-content-center align-items-center">
+                <div>
+                    <h1 class="pt-4">{{ message }}</h1>
+                    <img :src="imageUrl" alt="Vue Logo" class="mt-4">
                 </div>
             </div>
-        </nav>
-        <!-- Main Section -->
-        <div
-            class=" main-section container-fluid text-center text-light d-flex justify-content-center align-items-center">
-            <div>
-                <h1 class="pt-4">{{ message }}</h1>
-                <img :src="imageUrl" alt="Vue Logo" class="mt-4">
-            </div>
-        </div>
-        <!-- Footer -->
-        <footer class="bg-dark text-light text-center py-3 fixed-bottom">
-            <p class="mb-0">
-                <span>{{ footerText }}</span>
-                <a :href="footerLink" target="_blank" class="text-light text-decoration-none">
-                    {{ footerName }}
-                    <i class="bi bi-github"></i>
-                </a>
-                - All Rights Reserved
-            </p>
+            <!-- Footer -->
+            <footer class="bg-dark text-light text-center py-3 fixed-bottom">
+                <p class="mb-0">
+                    <span>{{ footerText }}</span>
+                    <a :href="footerLink" target="_blank" class="text-light text-decoration-none">
+                        {{ footerName }}
+                        <i class="bi bi-github"></i>
+                    </a>
+                    - All Rights Reserved
+                </p>
+        </main>
         </footer>
     </div>
     <!-- Bs Script -->
